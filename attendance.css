@@ -1,0 +1,169 @@
+/* Reset basic styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fb;
+  color: #333;
+}
+
+/* Top Bar */
+.topbar {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.profile-dropdown {
+  position: relative;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  top: 30px;
+  right: 0;
+  min-width: 100px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  z-index: 999;
+}
+
+.dropdown-content a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f0f0;
+}
+
+.show {
+  display: block;
+}
+
+/* Sidebar */
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #ffffff;
+  border-right: 1px solid #eee;
+  padding: 30px 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+}
+
+.sidebar li {
+  margin-bottom: 20px;
+}
+
+.sidebar li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.sidebar li.active a,
+.sidebar li a:hover {
+  color: #007bff;
+}
+
+/* Content Area */
+.content {
+  flex: 1;
+  padding: 40px;
+}
+
+.card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  margin: auto;
+}
+
+.card h2 {
+  margin-bottom: 25px;
+  font-size: 24px;
+  color: #007bff;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+/* Form Fields */
+form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+form select,
+form textarea,
+form input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fdfdfd;
+  transition: border-color 0.3s;
+  font-size: 14px;
+}
+
+form select:focus,
+form textarea:focus,
+form input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Submit Button */
+.submit-btn {
+  margin-top: 30px;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
